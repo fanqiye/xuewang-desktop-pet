@@ -1,0 +1,12 @@
+# Never publish user progress, private preferences or runtime logs.
+state.json
+state.json.*
+*.log
+*.tmp
+*.bak
+backup-before-*/
+release/
+.cache/
+.env
+*.zip
+*.sha256.txt

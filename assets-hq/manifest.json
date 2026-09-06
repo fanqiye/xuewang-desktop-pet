@@ -1,0 +1,533 @@
+{
+    "failed":  {
+                   "intervalMs":  340,
+                   "frames":  [
+                                  "failed/frame-00.png",
+                                  "failed/frame-01.png",
+                                  "failed/frame-02.png",
+                                  "failed/frame-03.png",
+                                  "failed/frame-04.png",
+                                  "failed/frame-05.png",
+                                  "failed/frame-06.png",
+                                  "failed/frame-07.png"
+                              ]
+               },
+    "feeding":  {
+                    "intervalMs":  430,
+                    "frames":  [
+                                   "feeding/frame-00.png",
+                                   "feeding/frame-01.png",
+                                   "feeding/frame-02.png",
+                                   "feeding/frame-03.png",
+                                   "feeding/frame-04.png",
+                                   "feeding/frame-05.png"
+                               ]
+                },
+    "idle":  {
+                 "intervalMs":  360,
+                 "frames":  [
+                                "idle/frame-00.png",
+                                "idle/frame-01.png",
+                                "idle/frame-02.png",
+                                "idle/frame-03.png",
+                                "idle/frame-04.png",
+                                "idle/frame-05.png"
+                            ]
+             },
+    "jumping":  {
+                    "intervalMs":  180,
+                    "frames":  [
+                                   "jumping/frame-00.png",
+                                   "jumping/frame-01.png",
+                                   "jumping/frame-02.png",
+                                   "jumping/frame-03.png",
+                                   "jumping/frame-04.png"
+                               ]
+                },
+    "petting":  {
+                    "intervalMs":  360,
+                    "frames":  [
+                                   "petting/frame-00.png",
+                                   "petting/frame-01.png",
+                                   "petting/frame-02.png",
+                                   "petting/frame-03.png",
+                                   "petting/frame-04.png",
+                                   "petting/frame-05.png"
+                               ]
+                },
+    "review":  {
+                   "intervalMs":  340,
+                   "frames":  [
+                                  "review/frame-00.png",
+                                  "review/frame-01.png",
+                                  "review/frame-02.png",
+                                  "review/frame-03.png",
+                                  "review/frame-04.png",
+                                  "review/frame-05.png"
+                              ]
+               },
+    "running-left":  {
+                         "intervalMs":  105,
+                         "frames":  [
+                                        "running-left/frame-00.png",
+                                        "running-left/frame-01.png",
+                                        "running-left/frame-02.png",
+                                        "running-left/frame-03.png",
+                                        "running-left/frame-04.png",
+                                        "running-left/frame-05.png",
+                                        "running-left/frame-06.png",
+                                        "running-left/frame-07.png"
+                                    ]
+                     },
+    "running-right":  {
+                          "intervalMs":  105,
+                          "frames":  [
+                                         "running-right/frame-00.png",
+                                         "running-right/frame-01.png",
+                                         "running-right/frame-02.png",
+                                         "running-right/frame-03.png",
+                                         "running-right/frame-04.png",
+                                         "running-right/frame-05.png",
+                                         "running-right/frame-06.png",
+                                         "running-right/frame-07.png"
+                                     ]
+                      },
+    "running":  {
+                    "intervalMs":  120,
+                    "frames":  [
+                                   "running/frame-00.png",
+                                   "running/frame-01.png",
+                                   "running/frame-02.png",
+                                   "running/frame-03.png",
+                                   "running/frame-04.png",
+                                   "running/frame-05.png"
+                               ]
+                },
+    "sleeping":  {
+                     "intervalMs":  1500,
+                     "frames":  [
+                                    "sleeping/frame-00.png",
+                                    "sleeping/frame-01.png"
+                                ]
+                 },
+    "waiting":  {
+                    "intervalMs":  340,
+                    "frames":  [
+                                   "waiting/frame-00.png",
+                                   "waiting/frame-01.png",
+                                   "waiting/frame-02.png",
+                                   "waiting/frame-03.png",
+                                   "waiting/frame-04.png",
+                                   "waiting/frame-05.png"
+                               ]
+                },
+    "waving":  {
+                   "intervalMs":  260,
+                   "frames":  [
+                                  "waving/frame-00.png",
+                                  "waving/frame-01.png",
+                                  "waving/frame-02.png",
+                                  "waving/frame-03.png"
+                              ]
+               },
+    "hungry":  {
+                   "intervalMs":  300,
+                   "frames":  [
+                                  "hungry/frame-00.png",
+                                  "hungry/frame-01.png",
+                                  "hungry/frame-02.png",
+                                  "hungry/frame-03.png",
+                                  "hungry/frame-04.png"
+                              ]
+               },
+    "bullied":  {
+                    "intervalMs":  420,
+                    "frames":  [
+                                   "bullied/frame-00.png",
+                                   "bullied/frame-01.png",
+                                   "bullied/frame-02.png",
+                                   "bullied/frame-03.png",
+                                   "bullied/frame-04.png",
+                                   "bullied/frame-05.png"
+                               ]
+                },
+    "angry":  {
+                  "intervalMs":  180,
+                  "frames":  [
+                                 "angry/frame-00.png",
+                                 "angry/frame-01.png",
+                                 "angry/frame-02.png",
+                                 "angry/frame-03.png",
+                                 "angry/frame-04.png",
+                                 "angry/frame-05.png"
+                             ]
+              },
+    "smug":  {
+                 "intervalMs":  380,
+                 "frames":  [
+                                "smug/frame-00.png",
+                                "smug/frame-01.png",
+                                "smug/frame-02.png",
+                                "smug/frame-03.png",
+                                "smug/frame-04.png"
+                            ]
+             },
+    "stuffed":  {
+                    "intervalMs":  520,
+                    "frames":  [
+                                   "stuffed/frame-00.png",
+                                   "stuffed/frame-01.png",
+                                   "stuffed/frame-02.png",
+                                   "stuffed/frame-03.png",
+                                   "stuffed/frame-04.png"
+                               ]
+                },
+    "shy":  {
+                "intervalMs":  380,
+                "frames":  [
+                               "shy/frame-00.png",
+                               "shy/frame-01.png",
+                               "shy/frame-02.png",
+                               "shy/frame-03.png",
+                               "shy/frame-04.png"
+                           ]
+            },
+    "dizzy":  {
+                  "intervalMs":  150,
+                  "frames":  [
+                                 "dizzy/frame-00.png",
+                                 "dizzy/frame-01.png",
+                                 "dizzy/frame-02.png",
+                                 "dizzy/frame-03.png",
+                                 "dizzy/frame-04.png",
+                                 "dizzy/frame-05.png"
+                             ]
+              },
+    "pout":  {
+                 "intervalMs":  420,
+                 "frames":  [
+                                "pout/frame-00.png",
+                                "pout/frame-01.png",
+                                "pout/frame-02.png",
+                                "pout/frame-03.png",
+                                "pout/frame-04.png"
+                            ]
+             },
+    "crown-tap":  {
+                      "intervalMs":  190,
+                      "frames":  [
+                                     "crown-tap/frame-00.png",
+                                     "crown-tap/frame-01.png",
+                                     "crown-tap/frame-02.png",
+                                     "crown-tap/frame-03.png"
+                                 ]
+                  },
+    "cheek-poke":  {
+                       "intervalMs":  210,
+                       "frames":  [
+                                      "cheek-poke/frame-00.png",
+                                      "cheek-poke/frame-01.png",
+                                      "cheek-poke/frame-02.png",
+                                      "cheek-poke/frame-03.png"
+                                  ]
+                   },
+    "ear-touch":  {
+                      "intervalMs":  260,
+                      "frames":  [
+                                     "ear-touch/frame-00.png",
+                                     "ear-touch/frame-01.png",
+                                     "ear-touch/frame-02.png",
+                                     "ear-touch/frame-03.png"
+                                 ]
+                  },
+    "belly-poke":  {
+                       "intervalMs":  220,
+                       "frames":  [
+                                      "belly-poke/frame-00.png",
+                                      "belly-poke/frame-01.png",
+                                      "belly-poke/frame-02.png",
+                                      "belly-poke/frame-03.png"
+                                  ]
+                   },
+    "wand-touch":  {
+                       "intervalMs":  190,
+                       "frames":  [
+                                      "wand-touch/frame-00.png",
+                                      "wand-touch/frame-01.png",
+                                      "wand-touch/frame-02.png",
+                                      "wand-touch/frame-03.png"
+                                  ]
+                   },
+    "cape-pull":  {
+                      "intervalMs":  210,
+                      "frames":  [
+                                     "cape-pull/frame-00.png",
+                                     "cape-pull/frame-01.png",
+                                     "cape-pull/frame-02.png",
+                                     "cape-pull/frame-03.png"
+                                 ]
+                  },
+    "foot-tickle":  {
+                        "intervalMs":  150,
+                        "frames":  [
+                                       "foot-tickle/frame-00.png",
+                                       "foot-tickle/frame-01.png",
+                                       "foot-tickle/frame-02.png",
+                                       "foot-tickle/frame-03.png"
+                                   ]
+                    },
+    "wake-startle":  {
+                         "intervalMs":  180,
+                         "frames":  [
+                                        "wake-startle/frame-00.png",
+                                        "wake-startle/frame-01.png",
+                                        "wake-startle/frame-02.png",
+                                        "wake-startle/frame-03.png"
+                                    ]
+                     },
+    "doro-crawl":  {
+                       "intervalMs":  125,
+                       "frames":  [
+                                      "doro-crawl/frame-00.png",
+                                      "doro-crawl/frame-01.png",
+                                      "doro-crawl/frame-02.png",
+                                      "doro-crawl/frame-03.png",
+                                      "doro-crawl/frame-04.png",
+                                      "doro-crawl/frame-05.png"
+                                  ]
+                   },
+    "food-sneak":  {
+                       "intervalMs":  210,
+                       "frames":  [
+                                      "food-sneak/frame-00.png",
+                                      "food-sneak/frame-01.png",
+                                      "food-sneak/frame-02.png",
+                                      "food-sneak/frame-03.png",
+                                      "food-sneak/frame-04.png",
+                                      "food-sneak/frame-05.png"
+                                  ]
+                   },
+    "guard-pounce":  {
+                         "intervalMs":  145,
+                         "frames":  [
+                                        "guard-pounce/frame-00.png",
+                                        "guard-pounce/frame-01.png",
+                                        "guard-pounce/frame-02.png",
+                                        "guard-pounce/frame-03.png",
+                                        "guard-pounce/frame-04.png"
+                                    ]
+                     },
+    "cape-burrito":  {
+                         "intervalMs":  430,
+                         "frames":  [
+                                        "cape-burrito/frame-00.png",
+                                        "cape-burrito/frame-01.png",
+                                        "cape-burrito/frame-02.png",
+                                        "cape-burrito/frame-03.png",
+                                        "cape-burrito/frame-04.png"
+                                    ]
+                     },
+    "nightmare-hide":  {
+                           "intervalMs":  320,
+                           "frames":  [
+                                          "nightmare-hide/frame-00.png",
+                                          "nightmare-hide/frame-01.png",
+                                          "nightmare-hide/frame-02.png",
+                                          "nightmare-hide/frame-03.png",
+                                          "nightmare-hide/frame-04.png"
+                                      ]
+                       },
+    "sulk-cocoon":  {
+                        "intervalMs":  500,
+                        "frames":  [
+                                       "sulk-cocoon/frame-00.png",
+                                       "sulk-cocoon/frame-01.png",
+                                       "sulk-cocoon/frame-02.png",
+                                       "sulk-cocoon/frame-03.png",
+                                       "sulk-cocoon/frame-04.png"
+                                   ]
+                    },
+    "pancake-fall":  {
+                         "intervalMs":  260,
+                         "frames":  [
+                                        "pancake-fall/frame-00.png",
+                                        "pancake-fall/frame-01.png",
+                                        "pancake-fall/frame-02.png",
+                                        "pancake-fall/frame-03.png",
+                                        "pancake-fall/frame-04.png"
+                                    ]
+                     },
+    "foot-slip":  {
+                      "intervalMs":  150,
+                      "frames":  [
+                                     "foot-slip/frame-00.png",
+                                     "foot-slip/frame-01.png",
+                                     "foot-slip/frame-02.png",
+                                     "foot-slip/frame-03.png",
+                                     "foot-slip/frame-04.png"
+                                 ]
+                  },
+    "belly-flop":  {
+                       "intervalMs":  210,
+                       "frames":  [
+                                      "belly-flop/frame-00.png",
+                                      "belly-flop/frame-01.png",
+                                      "belly-flop/frame-02.png",
+                                      "belly-flop/frame-03.png",
+                                      "belly-flop/frame-04.png"
+                                  ]
+                   },
+    "ice-spell":  {
+                      "intervalMs":  150,
+                      "frames":  [
+                                     "ice-spell/frame-00.png",
+                                     "ice-spell/frame-01.png",
+                                     "ice-spell/frame-02.png",
+                                     "ice-spell/frame-03.png",
+                                     "ice-spell/frame-04.png",
+                                     "ice-spell/frame-05.png"
+                                 ]
+                  },
+    "queen-decree":  {
+                         "intervalMs":  260,
+                         "frames":  [
+                                        "queen-decree/frame-00.png",
+                                        "queen-decree/frame-01.png",
+                                        "queen-decree/frame-02.png",
+                                        "queen-decree/frame-03.png",
+                                        "queen-decree/frame-04.png"
+                                    ]
+                     },
+    "wand-backfire":  {
+                          "intervalMs":  130,
+                          "frames":  [
+                                         "wand-backfire/frame-00.png",
+                                         "wand-backfire/frame-01.png",
+                                         "wand-backfire/frame-02.png",
+                                         "wand-backfire/frame-03.png",
+                                         "wand-backfire/frame-04.png"
+                                     ]
+                      },
+    "snack-struggle":  {
+                           "intervalMs":  190,
+                           "frames":  [
+                                          "snack-struggle/frame-00.png",
+                                          "snack-struggle/frame-01.png",
+                                          "snack-struggle/frame-02.png",
+                                          "snack-struggle/frame-03.png",
+                                          "snack-struggle/frame-04.png"
+                                      ]
+                       },
+    "snack-cry":  {
+                      "intervalMs":  390,
+                      "frames":  [
+                                     "snack-cry/frame-00.png",
+                                     "snack-cry/frame-01.png",
+                                     "snack-cry/frame-02.png",
+                                     "snack-cry/frame-03.png",
+                                     "snack-cry/frame-04.png"
+                                 ]
+                  },
+    "bag-bite":  {
+                     "intervalMs":  145,
+                     "frames":  [
+                                    "bag-bite/frame-00.png",
+                                    "bag-bite/frame-01.png",
+                                    "bag-bite/frame-02.png",
+                                    "bag-bite/frame-03.png",
+                                    "bag-bite/frame-04.png"
+                                ]
+                 },
+    "crown-drop":  {
+                       "intervalMs":  170,
+                       "frames":  [
+                                      "crown-drop/frame-00.png",
+                                      "crown-drop/frame-01.png",
+                                      "crown-drop/frame-02.png",
+                                      "crown-drop/frame-03.png",
+                                      "crown-drop/frame-04.png"
+                                  ]
+                   },
+    "crown-chase":  {
+                        "intervalMs":  110,
+                        "frames":  [
+                                       "crown-chase/frame-00.png",
+                                       "crown-chase/frame-01.png",
+                                       "crown-chase/frame-02.png",
+                                       "crown-chase/frame-03.png",
+                                       "crown-chase/frame-04.png",
+                                       "crown-chase/frame-05.png"
+                                   ]
+                    },
+    "snowball-play":  {
+                          "intervalMs":  180,
+                          "frames":  [
+                                         "snowball-play/frame-00.png",
+                                         "snowball-play/frame-01.png",
+                                         "snowball-play/frame-02.png",
+                                         "snowball-play/frame-03.png",
+                                         "snowball-play/frame-04.png"
+                                     ]
+                      },
+    "snowball-slide":  {
+                           "intervalMs":  105,
+                           "frames":  [
+                                          "snowball-slide/frame-00.png",
+                                          "snowball-slide/frame-01.png",
+                                          "snowball-slide/frame-02.png",
+                                          "snowball-slide/frame-03.png",
+                                          "snowball-slide/frame-04.png",
+                                          "snowball-slide/frame-05.png"
+                                      ]
+                       },
+    "cheek-squish":  {
+                         "intervalMs":  180,
+                         "frames":  [
+                                        "cheek-squish/frame-00.png",
+                                        "cheek-squish/frame-01.png",
+                                        "cheek-squish/frame-02.png",
+                                        "cheek-squish/frame-03.png",
+                                        "cheek-squish/frame-04.png"
+                                    ]
+                     },
+    "cheek-boing":  {
+                        "intervalMs":  125,
+                        "frames":  [
+                                       "cheek-boing/frame-00.png",
+                                       "cheek-boing/frame-01.png",
+                                       "cheek-boing/frame-02.png",
+                                       "cheek-boing/frame-03.png",
+                                       "cheek-boing/frame-04.png"
+                                   ]
+                    },
+    "feast-guard":  {
+                        "intervalMs":  350,
+                        "frames":  [
+                                       "feast-guard/frame-00.png",
+                                       "feast-guard/frame-01.png",
+                                       "feast-guard/frame-02.png",
+                                       "feast-guard/frame-03.png",
+                                       "feast-guard/frame-04.png"
+                                   ]
+                    },
+    "midnight-feast":  {
+                           "intervalMs":  420,
+                           "frames":  [
+                                          "midnight-feast/frame-00.png",
+                                          "midnight-feast/frame-01.png",
+                                          "midnight-feast/frame-02.png",
+                                          "midnight-feast/frame-03.png",
+                                          "midnight-feast/frame-04.png"
+                                      ]
+                       },
+    "last-bite":  {
+                      "intervalMs":  260,
+                      "frames":  [
+                                     "last-bite/frame-00.png",
+                                     "last-bite/frame-01.png",
+                                     "last-bite/frame-02.png",
+                                     "last-bite/frame-03.png",
+                                     "last-bite/frame-04.png"
+                                 ]
+                  }
+}
