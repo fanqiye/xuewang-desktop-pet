@@ -555,7 +555,6 @@ namespace XueWangDesktopPet {
     $script:dragStartedAt = [datetime]::MinValue
     $script:dragOriginLeft = 0.0
     $script:dragOriginTop = 0.0
-    $script:suppressNextClick = $false
     $script:chaseMode = $false
     $script:chaseTicks = 0
     $script:followMode = $false
@@ -1480,8 +1479,6 @@ namespace XueWangDesktopPet {
         & $enterActivityPhase 'active'
         & $scheduleNextNudge 40 76
     }
-
-    $openCodex = { Start-Process -FilePath "$env:WINDIR\explorer.exe" -ArgumentList 'shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App' }
 
     $applyArtifactSweetCare = {
         if (-not [bool]$script:artifactRuntime.Effects['Evergreen4']) { return 0 }
@@ -2859,7 +2856,12 @@ namespace XueWangDesktopPet {
     } 'neutral' 38
     $quietTileText = $quietTile.Tag
     $controlGrid.Children.Add($quietTile) | Out-Null
-    $controlGrid.Children.Add((& $newActionTile '打开 Codex' '' { & $markInteraction; & $showBriefState 'waving' 1200; & $openCodex } 'neutral' 38)) | Out-Null
+    $controlGrid.Children.Add((& $newActionTile '休息片刻' '' {
+        & $stopAmbientRoutine
+        & $enterActivityPhase 'sleep'
+        & $holdState 'sleeping'
+        & $hideControlPanel
+    } 'neutral' 38)) | Out-Null
 
     $sizeLabel = & $newPanelText '桌宠大小' 9.5 'SemiBold' 'muted'
     $sizeLabel.Margin = [Windows.Thickness]::new(3,9,0,2)
@@ -3170,16 +3172,6 @@ namespace XueWangDesktopPet {
     })
     $petImage.Add_MouseLeftButtonDown({
         param($sender, $eventArgs)
-        $ctrlDown = (([Windows.Input.Keyboard]::Modifiers -band [Windows.Input.ModifierKeys]::Control) -ne 0)
-        if ($eventArgs.ClickCount -ge 2 -and $ctrlDown) {
-            $script:suppressNextClick = $true
-            & $markInteraction
-            & $showBriefState 'waving' 1200
-            & $showFeedback '一起去聊天' 'Ctrl + 双击保留为打开 Codex；普通快速连点会继续触发身体互动。' 'positive' 0 0 0 2400
-            & $openCodex
-            $eventArgs.Handled = $true
-            return
-        }
         $script:dragging = $true
         $script:dragMoved = $false
         $script:dragOffset = $eventArgs.GetPosition($window)
@@ -3208,7 +3200,6 @@ namespace XueWangDesktopPet {
     $petImage.Add_MouseLeftButtonUp({
         param($sender, $eventArgs)
         $petImage.ReleaseMouseCapture()
-        if ($script:suppressNextClick) { $script:suppressNextClick = $false; $script:dragging = $false; return }
         $wasMoved = $script:dragMoved
         $script:dragging = $false
         if ($wasMoved) {

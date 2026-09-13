@@ -72,12 +72,15 @@ if (Test-Path -LiteralPath $sourceDir) {
 
 if (Test-Path -LiteralPath $scriptPath) {
     $scriptText = Get-Content -Raw -LiteralPath $scriptPath
-    foreach ($feature in 'state.json','LocalApplicationData','preferences','welcomeSeen','NotifyIcon','getCursorWorkAreaDip','petting','feeding','sleeping','feedbackCard','nextNudgeAt','ignoredNudges','petCooldownUntil','lastBondDecay','affectionCanDecrease','BitmapScalingMode','assets-hq','ambientRoutineNames','ambientTimer','activityPhase','cursor-curious','dream-twitch','wake-stretch','holdState','health','stamina','petStatus','departureReason','controlWindow','showControlPanel','toggleControlPanel','followMode','stopFollowing','returnHomeMode','craving','grievance','invokeRegionInteraction','resolveHitRegion','regionTapCounts','longPressCount','comboReactionCount','reactionSteps','recentEvents','interactionRegionGrid','quickCareGrid','panelPortrait','panelConclusion','panelFeedbackHost','archivePage','interactionPage','artifactPage','artifactSlots','artifactItems','artifactSets','artifactSlotGrid','artifactChoiceGrid','artifactEquipped','artifactEffects','雪王陪伴屋','国民常青','摇摇雪顶','极夜甜品宫','doro-crawl','pancake-fall','crown-chase','snack-struggle','cape-burrito') {
+    foreach ($feature in 'state.json','LocalApplicationData','preferences','welcomeSeen','NotifyIcon','getCursorWorkAreaDip','petting','feeding','sleeping','feedbackCard','nextNudgeAt','ignoredNudges','petCooldownUntil','lastBondDecay','affectionCanDecrease','BitmapScalingMode','assets-hq','ambientRoutineNames','ambientTimer','activityPhase','cursor-curious','dream-twitch','wake-stretch','holdState','health','stamina','petStatus','departureReason','controlWindow','showControlPanel','toggleControlPanel','followMode','stopFollowing','returnHomeMode','craving','grievance','invokeRegionInteraction','resolveHitRegion','regionTapCounts','longPressCount','comboReactionCount','reactionSteps','recentEvents','interactionRegionGrid','quickCareGrid','panelPortrait','panelConclusion','panelFeedbackHost','archivePage','interactionPage','artifactPage','artifactSlots','artifactItems','artifactSets','artifactSlotGrid','artifactChoiceGrid','artifactEquipped','artifactEffects','雪王陪伴屋','国民常青','摇摇雪顶','极夜甜品宫','doro-crawl','pancake-fall','crown-chase','snack-struggle','cape-burrito','休息片刻') {
         if ($scriptText -notmatch [regex]::Escape($feature)) { $errors.Add("缺少成熟互动机制：$feature") }
     }
 
     foreach ($forbiddenFeature in 'FromFollowDwell','followDwellSince','panelPresenceTimer','$overPet') {
         if ($scriptText -match [regex]::Escape($forbiddenFeature)) { $errors.Add("仍包含会自动弹出档案仪的旧路径：$forbiddenFeature") }
+    }
+    foreach ($externalChatPattern in 'OpenAI\.[Cc]odex','open[Cc]odex','suppressNextClick','打开\s+[Cc]odex') {
+        if ($scriptText -match $externalChatPattern) { $errors.Add("仍包含外部聊天应用入口：$externalChatPattern") }
     }
 
     $mouseEnterStart = $scriptText.IndexOf('$petImage.Add_MouseEnter')
@@ -133,7 +136,7 @@ $requiredMarkers = @(
     'cleanHoverHint=True','artifactSlots=5','artifactItems=15','artifactSets=3','artifactSystem=True','artifactUi=True','artifactPersistence=True','artifactDiskLoad=True','stateBackupRecovery=True','stateTransactionalLoad=True','sweetCareZero=True','shakeDismantle=True','staminaRecovery=True',
     'ambientRoutines=53','ambientVariety=True','naturalSchedule=True','naturalStart=True',
     'staticRest=True','interactions=3','interactionLogic=True','affectionCanDecrease=True',
-    'lifeSystem=True','departureReachable=True','followMode=True','nudgeWindow=True','persistence=True'
+        'lifeSystem=True','departureReachable=True','followMode=True','nudgeWindow=True','persistence=True'
 )
 foreach ($marker in $requiredMarkers) {
     if ($output -notmatch [regex]::Escape($marker)) { $errors.Add("自检缺少标记：$marker") }
